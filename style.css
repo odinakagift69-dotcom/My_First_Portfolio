@@ -1,0 +1,125 @@
+/*Reset & base*/ 
+*{ 
+    margin:0;
+    padding:0; 
+    box-sizing: border-box;
+    font-family: "Sego UI", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+/*Body*/
+body {
+    background: color #f6f0ff;/*soft lavender background*/
+    color:#333;
+}
+/* Navbar*/
+.navbar{
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 30px;
+    background-color: #e6d6ff;
+    border-radius:15px;
+    margin:10px;
+}
+.nav-logo{
+    font-weight:bold;
+    font-size: 1.5rem;
+    color:#4b2e83;
+}
+.nav-links{
+    list-style: none;
+    display: flex;
+    gap:20px;
+}
+.nav-links{
+    text-decoration:none;
+    color:#4b2e83;
+    font-weight: 500;
+    padding: 5px 10px;
+    border-radius: 10px;
+    transition: background 0.3s;
+}
+.nav-links a:hover {
+    background-color:#d1b3ff;
+}
+/*Main  layout*/
+.main-layout{
+    display:flex;
+    flex-wrap: wrap;/*responsive wrap on small screens*/
+    max-width: 1000px;
+    margin: 40px;
+    gap:20px;
+    padding: 0 20px;
+}
+/*Article*/
+.article{
+    flex: 1 1 50%;/* 50% width on desktop, flexible*/
+}
+/*Aside*/
+.aside{
+    flex: 1 1 50%;/* 50% width on desktop, flexible*/
+    background-color:#f6e6ff;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+/* Hero Section*/
+.hero{
+    text-align: center;
+    padding: 40px 20px;
+}
+.hero h1{
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #6a4baf;
+}
+.hero p{
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+.btn {
+    background-color: #d1b3ff;
+    color: #4b2e83;
+    padding: 10px 20px;
+    border-radius: 15px;
+    text-decoration: none;
+    font-weight:600;
+    transition: background 0.3s;
+}
+.btn:hover{
+    background-color:#b08cff;
+}
+
+/*Tweets*/
+.tweets-container h1{
+    text-align:center;
+    margin-bottom:30px;
+    color:#6a4baf;
+}
+
+.tweets-card{
+    background-color:#fff0ff;
+    padding:20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    box-shadow:0px 4px 8px rgba(0,0,0,0,1);
+    transition: transform 0.2s;
+}
+
+.tweet-card:hover{
+    transform: translateY(-5px);
+}
+/* Footer*/
+footer{
+    text-align:center;
+    padding:20px;
+    margin-top: 50px;
+    color: #4b2e83;
+}
+
+/*Responsive: stack on mobile*/
+@media (max-width: 768px) {
+    .article, .aside {
+        flex:1 1 100%;/* stack vertically*/
+    }
+}
