@@ -1,54 +1,97 @@
 <!DOCTYPE html>
-<html lang ="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-    content="width=device-width,initial-scale=1.0">
-    <title>
-        Tweets -Soft Lavender Site
-    </title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <!-- HEADER-->
-     <header>
-     <nav class="navbar">
-        <div class="nav-logo"> LavnederSite</div>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="tweets.html">Tweets</a></li>
-        </ul>
-     </nav>
-     </header>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title> My Cool Website-Tweets</title>
+        <link rel="stylesheets" href="style.css">
 
-     <!-- MAIN-->
-      <main class="main-layout">
-        <!--ARTICLE:Tweets content -->
-        <article class=" article tweets-container">
-        <h1>Lastest Tweets</h1>
+        <!-- Same Css style as index.html -->
+         <style>
+            *{
+                margin: 0;
+                 padding:0; 
+                 box-sizing: border-box;
+            }
+            body{
+                font-family:"Poppins", sans-serif;
+                 background:#f9f9f9; 
+                 color:#333; 
+                 line-height: 1.6;
+            }
+            header{
+                background:#333;
+                 color:white; 
+                 padding:15px 0
+            }
+            header ul{
+                list-style:none; display: flex; justify-content: center;
+                gap: 20px;
+            }
+            header a{
+                color: white;
+                text-decoration:none ;
+                font-weight: bold;
+            }
+            header a:hover {
+                color:#ffcc00;
+            }
+            main{
+                display: flex;
+                justify-content: space-between;
+                gap: 20px;
+                padding: 20px;
+                max-width: 1000px; 
+                margin: auto;
+            }
+            article{
+                flex:3;
+                background: white;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow:0 0 5px rgba(0,0,0,0.1);
+            }
+            aside{
+                flex: 1;
+                background:#f0f0f0;
+                padding:15px;
+                border-radius:10px;
+                text-align: center;
+            }
+            footer{
+                text-align: center;
+                background:#333;
+                color: white;
+                padding: 10px;
+                margin-top: 20px;
+            }
+            footer a{
+                color: #ffcc00;
+                text-decoration:none;
+            }
+         </style>
+    </head>
+    <body>
+        <header>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tweets.html"> Tweets</a></li>
+            </ul>
+        </header>
 
-        <div class="tweet-card">
-            <h3>User1</h3>
-            <p> This is my first lavender-inspired tweet!</p>
-        </div>
-        <div class="tweet-card"> 
-            <h3>User2</h3>
-            <p>Loving pastel aesthetics today!</p>
-        </div>
-        <div class="tweet-card"> 
-            <h3>Soft UI makes everything feel calm and cozy.</h3>
-        </div>
-       </article>
+        <main>
+            <article>
+                <h1>Lastest Tweets</h1>
+                <p> "Just Finished building my first website structure!"</p>
+                <p> Learning HTML & CSS -one step at a time</p>
+            </article>
+            <aside>
+                <p>Placeholder to add comment thread later</p>
+            </aside>
+        </main>
 
-       <!--ASIDE:Placeholer comment thread -->
-       <aside class="aside">
-        <p> placeholder to add a comment thread later</p>
-       </aside>
-      </main>
-    
-    <!-- Footer -->
-    <footer>
-        &copy; 2025 LavenderSite.All rights reserved.
-    </footer>
-</body>
+        <footer>
+            <p>Made by Gift Odinaka-<a href="https://github.com/odinakagift69-dotcom/My_First_Portfolio.git"></a> </p>
+        </footer>
+    </body>
 </html>
