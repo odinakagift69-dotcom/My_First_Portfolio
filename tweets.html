@@ -1,97 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1.0">
-        <title> My Cool Website-Tweets</title>
-        <link rel="stylesheets" href="style.css">
+<head>
+  <meta charset="UTF-8">
+  <title>My Tweets</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="tweets.html">Tweets</a></li>
+    </ul>
+  </header>
 
-        <!-- Same Css style as index.html -->
-         <style>
-            *{
-                margin: 0;
-                 padding:0; 
-                 box-sizing: border-box;
-            }
-            body{
-                font-family:"Poppins", sans-serif;
-                 background:#f9f9f9; 
-                 color:#333; 
-                 line-height: 1.6;
-            }
-            header{
-                background:#333;
-                 color:white; 
-                 padding:15px 0
-            }
-            header ul{
-                list-style:none; display: flex; justify-content: center;
-                gap: 20px;
-            }
-            header a{
-                color: white;
-                text-decoration:none ;
-                font-weight: bold;
-            }
-            header a:hover {
-                color:#ffcc00;
-            }
-            main{
-                display: flex;
-                justify-content: space-between;
-                gap: 20px;
-                padding: 20px;
-                max-width: 1000px; 
-                margin: auto;
-            }
-            article{
-                flex:3;
-                background: white;
-                padding: 20px;
-                border-radius: 10px;
-                box-shadow:0 0 5px rgba(0,0,0,0.1);
-            }
-            aside{
-                flex: 1;
-                background:#f0f0f0;
-                padding:15px;
-                border-radius:10px;
-                text-align: center;
-            }
-            footer{
-                text-align: center;
-                background:#333;
-                color: white;
-                padding: 10px;
-                margin-top: 20px;
-            }
-            footer a{
-                color: #ffcc00;
-                text-decoration:none;
-            }
-         </style>
-    </head>
-    <body>
-        <header>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="tweets.html"> Tweets</a></li>
-            </ul>
-        </header>
+  <main>
+    <article>
+      <h1>My Favorite Tweets</h1>
 
-        <main>
-            <article>
-                <h1>Lastest Tweets</h1>
-                <p> "Just Finished building my first website structure!"</p>
-                <p> Learning HTML & CSS -one step at a time</p>
-            </article>
-            <aside>
-                <p>Placeholder to add comment thread later</p>
-            </aside>
-        </main>
+      <!-- Example of embedding a tweet using a link or blockquote -->
+      <p>Here's a tweet I found inspiring:</p>
+      <blockquote class="twitter-tweet">
+        <p lang="en" dir="ltr">Learning to code takes time, practice, and patience. Just keep going! 💻✨</p>
+        &mdash; CodeMentor (@codementor) 
+        <a href="https://twitter.com/codementor/status/1234567890" target="_blank">March 1, 2024</a>
+      </blockquote>
 
-        <footer>
-            <p>Made by Gift Odinaka-<a href="https://github.com/odinakagift69-dotcom/My_First_Portfolio.git"></a> </p>
-        </footer>
-    </body>
+      <p>Another tweet worth sharing:</p>
+      <blockquote class="twitter-tweet">
+        <p lang="en" dir="ltr">Debugging is like being the detective in a crime movie where you're also the murderer.</p>
+        &mdash; Dev Quotes (@devquotes)
+        <a href="https://twitter.com/devquotes/status/9876543210" target="_blank">April 12, 2024</a>
+      </blockquote>
+
+      <!-- Optional: you can add more tweets, text, images, etc. -->
+    </article>
+
+    <aside>
+      <p>placeholder to add comment thread later</p>
+    </aside>
+  </main>
+
+  <footer>
+    <p>Made by Your Name - <a href="https://yourlink.com" target="_blank">here</a></p>
+  </footer>
+
+  <!-- Optional: Include Twitter script if embedding real tweets -->
+  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</body>
 </html>
+
